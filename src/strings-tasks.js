@@ -186,9 +186,7 @@ function removeLastOccurrences(str, value) {
  */
 function sumOfCodes(str) {
   return str
-    ? str.split('').reduce(function (sum, char, ind) {
-        return sum + str.charCodeAt(ind);
-      }, 0)
+    ? str.split('').reduce((sum, char, ind) => sum + str.charCodeAt(ind), 0)
     : 0;
 }
 
